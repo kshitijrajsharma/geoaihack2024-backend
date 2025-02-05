@@ -1,0 +1,5 @@
+outputs
+__pycache__/
+sentinel_images_backup
+static
+instageo_best_checkpoint.ckpt
