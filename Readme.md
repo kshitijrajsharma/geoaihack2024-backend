@@ -9,11 +9,34 @@ Identify the potential  locust breeding grounds
 
 ### Data : 
 
+It is comprehensive dataset of ground-truth locust observations obtained from the UN FAO Locust Hub (downloaded on March 17, 2022). The dataset covers observations from 1985 to 2021 and includes detailed information on locust life stages (Hoppers, Bands, Adults, and Swarms) as well as ecological conditions. These locust observations have been processed with guidance from experts to extract observations for solitarious locusts breeding and non-breeding grounds.
+
+To align with the availability of satellite imagery, the dataset has been processed to focus on the period from 2016 to 2021, resulting in 42,453 observations. This subset has been further divided into:
+
+    Training set: Observations from 2016–2020
+    Test set: Observations for 2021
+
+Using the locust observations as ground-truth labels, we collect multispectral features from satellites through InstaGeo’s Data Pipeline, which offers seamless access to the following modalities:
+
+    Harmonized Landsat and Sentinel-2 (HLS) multispectral data (NASA/USGS)
+
+Command used to generate HLS dataset
+python -m "instageo.data.chip_creator" --dataframe_path="train.csv" --output_directory="train" --min_count=1 --chip_size=256 --temporal_tolerance=3 --temporal_step=30 --num_steps=3 --masking_strategy=any --mask_types=water,cloud --data_source=HLS --window_size=3 --processing_method=cog
+
+    Sentinel-2 multispectral data (European Space Agency - ESA)
+
+Command used to generate Sentinel-2 dataset
+python -m "instageo.data.chip_creator" --dataframe_path="train.csv" --output_directory="train" --min_count=1 --chip_size=256 --temporal_tolerance=7 --temporal_step=30 --num_steps=3 --masking_strategy=any --mask_types=water,cloud --data_source=HLS --window_size=1 --cloud_coverage=50 --processing_method=cog
+
+The outputs of InstaGeo data pipeline include:
+
+    Chips: 3 x 6 x 256 x 256 arrays (Number of steps X Number of Satellite Data Bands X Height, Width).
+    Although, in the Tiff file for the chips it is stored as 18 x 256 x 256: the first two dimensions have been combined into one.
+    Segmentation maps: 256 x 256 arrays where each pixel is assigned the value of the ground-truth observation retrieved from FAO Locust Hub
 
 
 
-## Backend for geoaihack 
-
+## Run this Backend 
 
 
 ### Run 
@@ -21,6 +44,7 @@ Identify the potential  locust breeding grounds
 ```bash
 uvicorn API:app --host 127.0.0.1 --port 8000
 ```
+
 ### Test 
 
 
