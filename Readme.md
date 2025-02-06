@@ -39,10 +39,6 @@ The outputs of InstaGeo data pipeline include:
     Segmentation maps: 256 x 256 arrays where each pixel is assigned the value of the ground-truth observation retrieved from FAO Locust Hub
 
 
-### Result : 
-![image](https://github.com/user-attachments/assets/6eb815a2-0952-42a3-9882-ffa7deb144bb)
-
-
 
 ## Run this Backend 
 
@@ -66,3 +62,12 @@ curl -X POST "http://127.0.0.1:8000/process" \
            "bbox": [45.287458864582675,15.100715276592293,45.35480955103723,15.167070639141063]
          }'
 ```
+
+
+### Result : 
+![image](https://github.com/user-attachments/assets/6eb815a2-0952-42a3-9882-ffa7deb144bb)
+
+
+And we won second place in the hackathon , Hurray !!! 
+![image](https://github.com/user-attachments/assets/69def187-f214-4fc0-b747-3a25be69172b)
+
