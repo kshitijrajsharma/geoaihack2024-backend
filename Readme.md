@@ -6,7 +6,7 @@ Kaggle Link : https://www.kaggle.com/competitions/geo-ai-hack/
 
 Demo Video : https://www.youtube.com/watch?v=scP9Xd8NUqY 
 
-Slides : Click [Here](./slides.pdf)
+Slides : Click [Here](https://raw.githubusercontent.com/kshitijrajsharma/geoaihack2025/refs/heads/main/slides.pdf)
 
 ### Objective : 
 Identify the potential  locust breeding grounds 
