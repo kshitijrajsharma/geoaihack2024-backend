@@ -79,6 +79,8 @@ curl -X POST "http://127.0.0.1:8000/process" \
 ![image](https://github.com/user-attachments/assets/6eb815a2-0952-42a3-9882-ffa7deb144bb)
 
 
-And we won second place in the hackathon , Hurray !!! 
-![image](https://github.com/user-attachments/assets/69def187-f214-4fc0-b747-3a25be69172b)
+**And we won second place in the hackathon , Hurray !!! **
+
+![image](https://github.com/user-attachments/assets/f5018c18-ab92-4243-b73a-7fe802fa29c0)
+
 
