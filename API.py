@@ -4,6 +4,7 @@ import re
 import shutil
 import subprocess
 from datetime import datetime
+from typing import List
 
 import mercantile
 import numpy as np
@@ -11,7 +12,7 @@ import rasterio
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from pyproj import Transformer
 from rasterio.merge import merge
 from rasterio.transform import from_bounds
@@ -48,10 +49,17 @@ app.mount("/static", StaticFiles(directory=WORK_DIR), name="static")
 
 
 class ProcessRequest(BaseModel):
-    start_date: str
-    end_date: str
-    cloud_cover: int
-    bbox: list[float]
+    start_date: str = Field(default="2024-12-15")
+    end_date: str = Field(default="2024-12-31")
+    cloud_cover: int = Field(default=30)
+    bbox: List[float] = Field(
+        default=[
+            45.287458864582675,
+            15.100715276592293,
+            45.35480955103723,
+            15.167070639141063,
+        ]
+    )
 
 
 @app.post("/process")
