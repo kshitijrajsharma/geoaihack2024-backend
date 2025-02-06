@@ -1,8 +1,12 @@
-## Working dir 
+## Working dir for GeoAIhack 2025
 
-Challenge : https://github.com/kshitijrajsharma/geoaihack2024.git 
+Challenge : https://geoaihack.com/ 
 
 Kaggle Link : https://www.kaggle.com/competitions/geo-ai-hack/
+
+Demo Video : https://www.youtube.com/watch?v=scP9Xd8NUqY 
+
+Slides : Click [Here](./slides.pdf)
 
 ### Objective : 
 Identify the potential  locust breeding grounds 
