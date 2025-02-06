@@ -14,10 +14,10 @@ Identify the potential  locust breeding grounds
 
 ### Team
 
-- Omowonuola Akintola - University of Salzburg
-- Emmanuel Jolaiya 
-- Kshitij Sharma - University of Salzburg , HOTOSM
-- Ayomide Oraegbu
+- Omowonuola Akintola - Copernicus Masters in Digital Earth (Geo Data Science & AI4 EO), Paris Lodron University of Salzburg
+- Emmanuel Jolaiya - Master of Science in Geospatial Technologies, Universitat Jaume I (UJI), Castellón, Dept. Lenguajes y Sistemas Informaticos (LSI), Castellón, Spain.
+- Kshitij Sharma - Copernicus Masters in Digital Earth (Geo Data Science & AI4 EO), Paris Lodron University of Salzburg & HOTOSM
+- Ayomide Oraegbu - Master of Science in Geospatial Technologies, Universitat Jaume I (UJI), Castellón, Dept. Lenguajes y Sistemas Informaticos (LSI), Castellón, Spain.
 
 
 ### Data : 
