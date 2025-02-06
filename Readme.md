@@ -11,9 +11,20 @@ Slides : Click [Here](./slides.pdf)
 ### Objective : 
 Identify the potential  locust breeding grounds 
 
+
+### Team
+
+- Omowonuola Akintola - University of Salzburg
+- Emmanuel Jolaiya
+- Kshitij Sharma - University of Salzburg 
+- Ayomide Oraegbu
+
+
 ### Data : 
 
 It is comprehensive dataset of ground-truth locust observations obtained from the UN FAO Locust Hub (downloaded on March 17, 2022). The dataset covers observations from 1985 to 2021 and includes detailed information on locust life stages (Hoppers, Bands, Adults, and Swarms) as well as ecological conditions. These locust observations have been processed with guidance from experts to extract observations for solitarious locusts breeding and non-breeding grounds.
+
+ This data contains 6 spectral bands (Blue(1), Green(2), Red(3), NIR Narrow(4), SWIR1(5), SWIR2(6))
 
 To align with the availability of satellite imagery, the dataset has been processed to focus on the period from 2016 to 2021, resulting in 42,453 observations. This subset has been further divided into:
 
