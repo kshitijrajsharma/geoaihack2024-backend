@@ -15,8 +15,8 @@ Identify the potential  locust breeding grounds
 ### Team
 
 - Omowonuola Akintola - University of Salzburg
-- Emmanuel Jolaiya
-- Kshitij Sharma - University of Salzburg 
+- Emmanuel Jolaiya 
+- Kshitij Sharma - University of Salzburg , HOTOSM
 - Ayomide Oraegbu
 
 
