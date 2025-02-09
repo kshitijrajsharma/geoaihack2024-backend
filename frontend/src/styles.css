@@ -1,0 +1,13 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.floating-components {
+    @apply absolute z-[10] bg-white rounded-xl shadow-2xl py-3 px-4 
+}
+
+.icons {
+    @apply w-8 h-8
+}
