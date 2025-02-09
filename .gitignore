@@ -3,3 +3,6 @@ __pycache__/
 sentinel_images_backup
 static
 instageo_best_checkpoint.ckpt
+node_modules/
+node_modules 
+.DS_Store 
